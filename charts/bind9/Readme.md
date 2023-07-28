@@ -60,7 +60,7 @@ config:
     server2   IN      A     192.168.1.12
 env:
   - name: TZ
-    value: Europe/Moscow
+    value: UTC
   - name: BIND9_USER
     value: bind
 service:
