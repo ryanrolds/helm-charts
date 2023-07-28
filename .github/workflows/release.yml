@@ -18,14 +18,7 @@ jobs:
         run: |
           git config user.name "$GITHUB_ACTOR"
 
-      - name: releaser
-        run: |
-          ./releaser.sh
-        env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.5.0
         env:
-          CR_TOKEN: "${{ secrets.GH_TOKEN }}"
-          CR_OWNER: "${{ env.GITHUB_REPOSITORY_OWNER }}"
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
