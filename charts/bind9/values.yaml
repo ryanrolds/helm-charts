@@ -1,8 +1,0 @@
-config: {}
-env: []
-replicas: 1
-service:
-  ports: []
-  type: ClusterIP
-  externalTrafficPolicy: Cluster
-strategy: RollingUpdate
