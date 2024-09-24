@@ -11,3 +11,4 @@ spec:
   selector:
     app: {{ .Release.Name }}
   type: {{ .Values.service.type }}
+  externalTrafficPolicy: {{ .Values.service.externalTrafficPolicy }}
